@@ -1,0 +1,23 @@
+$font-size: 1rem;
+$font-color: lch(28 99 35deg);
+
+html {
+  color: $font-color;
+  font-weight: 400;
+  font-size: $font-size;
+  font-family: Kreon, serif;
+  font-style: normal;
+}
+
+h1 {
+  color: aqua;
+  font-family: Roboto, sans-serif;
+}
+
+.logo1 {
+  width: 10em;
+}
+
+.logo2 {
+  width: 10em;
+}
