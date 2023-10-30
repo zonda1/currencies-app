@@ -11,21 +11,3 @@
   font-style: normal;
   src: url("./kreon-v37-latin-regular.woff2") format("woff2");
 }
-
-/* roboto-300 - latin */
-@font-face {
-  font-weight: 300;
-  font-family: Roboto;
-  font-style: normal;
-  src: url("./roboto-v30-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-}
-
-/* roboto-regular - latin */
-@font-face {
-  font-weight: 400;
-  font-family: Roboto;
-  font-style: normal;
-  src: url("./roboto-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-}

@@ -1,0 +1,54 @@
+.header {
+    position: relative;
+    flex: 1 0 44.61%;
+    // flex: 1 0 auto;
+    margin: 0 13px 0 33px;
+    background-image: url(../../images/Kitten.png);
+    background-position: 100% 0;
+    background-size: 190px 341px;
+    background-repeat: no-repeat;
+}
+
+.header__title {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.header__title h2 {
+    max-width: 165px;
+    text-transform: uppercase;
+    margin: 0 10px 0 0;
+}
+.header__title h3 {
+    max-width: 87px;
+}
+
+.select {
+    display: block;
+    text-transform: uppercase;
+    width: 181px;
+    height: 43px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 300;
+    padding: 10px 0 10px 15px;
+    margin: 0;
+    border: 1px solid #dad6d6;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    background-color: inherit;
+    background-image: url(../../images/chevron-down.svg);
+    background-repeat: no-repeat;
+    background-position:
+        right 1.1em top 57%,
+        0 0;
+    background-size:
+        auto auto,
+        100%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.select::-ms-expand {
+    display: none;
+}

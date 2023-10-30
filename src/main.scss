@@ -1,23 +1,35 @@
-$font-size: 1rem;
-$font-color: lch(28 99 35deg);
+$font-size-main: 18px;
+$font-size-h2: 96px;
+$font-color: #000;
 
 html {
   color: $font-color;
   font-weight: 400;
-  font-size: $font-size;
+  font-size: $font-size-main;
   font-family: Kreon, serif;
   font-style: normal;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
 }
 
 h1 {
-  color: aqua;
-  font-family: Roboto, sans-serif;
+  display: none;
 }
 
-.logo1 {
-  width: 10em;
+h2 {
+  font-size: $font-size-h2;
 }
 
-.logo2 {
-  width: 10em;
+h3 {
+  font-weight: 300;
 }
