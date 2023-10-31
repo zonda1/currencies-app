@@ -1,0 +1,87 @@
+.select__wrapper {
+    position: relative;
+    width: 350px;
+}
+
+.select__arrow {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transition:
+        transform 0.2s ease-in-out,
+        margin-top 0.2s ease-in-out;
+    margin-top: -10px;
+}
+
+.select__placeholder {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px;
+    font-family: "SF Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid #dad6d6;
+}
+
+.select__wrapper[data-is-active="true"] .select__arrow {
+    transform: rotate(180deg);
+}
+
+.select__wrapper[data-is-active="true"] .select__placeholder {
+    border: 1px solid #0022f5;
+}
+
+.select__placeholder[data-selected="true"] {
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+.select__options-list {
+    display: grid;
+    position: absolute;
+    list-style: none;
+    width: 100%;
+    top: 36px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #dad6d6;
+}
+
+.select__option {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+    padding: 5px;
+    border: 1px;
+    cursor: pointer;
+    font-family: "SF Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid #dad6d6;
+}
+
+.select__option:hover {
+    background-color: #f0efef;
+    border-top: 1px solid #dad6d6;
+    border-bottom: 2px solid #dad6d6;
+}

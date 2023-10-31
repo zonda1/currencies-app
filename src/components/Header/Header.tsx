@@ -1,9 +1,10 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './styles.scss';
 
 import { changeCurrency, fetchCurrencies } from '../../redux/slices/currencySlice';
 import { useAppSelector, useAppDispatch } from '../../redux/store/store';
 import { selectAllCurrencies, selectCurrentCurrency } from '../../redux/selectors/selectors';
+import Select from '../Select/Select';
 
 const Header = () => {
     const dispatch = useAppDispatch();
@@ -18,6 +19,10 @@ const Header = () => {
         dispatch(changeCurrency(currencies[0]?.name));
     }, [currencies]);
 
+    const handleCurrencySelect = (value: string) => {
+        dispatch(changeCurrency(value));
+    };
+
     return (
         <div className="header">
             <div className="header__title">
@@ -25,7 +30,7 @@ const Header = () => {
                 <h3>currencies academic terms</h3>
             </div>
             <div className="header__select">
-                <select
+                {/* <select
                     name="currencies"
                     id={currencies[0]?.id}
                     defaultValue={currencies[0]?.name}
@@ -37,7 +42,14 @@ const Header = () => {
                             {el.name}
                         </option>
                     ))}
-                </select>
+                </select> */}
+
+                <Select
+                    options={currencies}
+                    selected={currentCurrency || null}
+                    placeholder="Выберите месяц"
+                    onChange={handleCurrencySelect}
+                />
             </div>
         </div>
     );

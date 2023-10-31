@@ -1,13 +1,13 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-interface Icurrencies {
+export interface ICurrencies {
     id: string;
     name: string;
     min_size: string;
 }
 
 export interface CurrencyState {
-    allCurrencies: Icurrencies[];
+    allCurrencies: ICurrencies[];
     currentCurrency: string;
 }
 
