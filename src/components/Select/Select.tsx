@@ -45,8 +45,8 @@ const Select = ({ selected, options, placeholder, onChange }: ISelect) => {
             </div>
             <div
                 className="select__placeholder"
-                // role="button"
-                // tabIndex={0}
+                role="button"
+                tabIndex={0}
                 data-selected={!!selected}
                 onClick={handlePlaceholderClick}
             >
